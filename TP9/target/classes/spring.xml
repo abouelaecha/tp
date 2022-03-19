@@ -1,0 +1,9 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean id="ctrl1" class="cigma.pfe.controllers.ClientController" scope="prototype">
+        <constructor-arg ref="idservice"/>
+    </bean>
+    <bean id="idservice" class="cigma.pfe.controllers.ClientServiceImpl" scope="prototype"></bean>
+
+</beans>
